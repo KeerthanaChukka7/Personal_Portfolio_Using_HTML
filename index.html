@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7069a1fb8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="#heafer">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Academic projects</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Keerthana</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+<!--------------------------------about--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/keerthana.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I am Keerthana Chukka from Guntur. I am pursuing my honors undergraduate degree in Computer Science and Engineering at KL University.
+                       As I was very interested in learning about how Inventing new algorithms to solve problems and
+                       build analytical tools, I choose Data Science and Big Data Analytics as my specialization. Regarding my programming
+                       skills, I am good at Java, Python, and HTML&CSS programming languages also possessing an excellent coding profile on
+                       several competit technologies like Mern Stack Development, Python Full Stack Development. I am also good at
+                       database management and have learned different database technologies like SQL and MongoDB.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Core Java</li>
+                            <li><span>Python</span><br>Good knowledge of Python</li>
+                            <li><span>Web applications skills</span><br>HTML & CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>AWS</span><br>AWS Certified Developer - Associate</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>KL University</li>
+                            <li><span>2018 - 2020</span><br>Narayana Junior college</li>
+                            <li><span>2017 - 2018</span><br>Bhashyam High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------------------projects------------------------------>
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Academic projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Web application </h2>
+                <p> Health Clinic Managemnt:</p> 
+                <p>Home page designed with User Authentication and Authorization, Patient Management, Appointment Scheduling, Electronic
+                Medical Records. Spring MVC framework for building the backend. Relational databases
+                MySQL is used for data storage. Hibernate, Java Persistence API (JPA) for object-relational mapping. HTML, CSS, and
+                JavaScript for the frontend user interface.</p>
+                <a href="#">learn more...</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python web development </h2>
+                <p> Bidding System:</p>
+                <p>Bidding System is a web-based platform developed using Python Django framework. It aims to streamline and automate the
+                bidding process by providing a centralized platform for buyers and sellers to interact. It includes features such as
+                real-time bidding, automated notifications, secure payment integration, and comprehensive reporting.</p>
+                <a href="#">learn more...</a>
+            </div>
+        </div>       
+    </div>
+</div>
+
+<!----------------------------------portfolio------------------------------ -->
+<div id="Portfolio">
+    <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/work1.png">
+            <div class="layer">
+                <h3>Coding skills</h3>
+                <p>"I possess proficient coding skills in various programming languages and a passion for problem-solving, allowing me to
+                    develop innovative and efficient solutions to tackle complex challenges"</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        
+        <div class="work">
+            <img src="images/work2.jpg">
+            <div class="layer">
+                <h3>WEB applications</h3>
+            <p>"Passionate web application developer with a strong expertise in creating innovative and user-friendly solutions,
+            dedicated to crafting seamless online experiences that drive engagement and leave a lasting impact."</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work3.png">
+            <div class="layer">
+                <h3>Research work</h3>
+                <p>Presented for the Seventh International Conference on Computing Methodologies and Communication (ICCMC 2023)
+                    held on 23-25 February, 2023.
+                    "Research Paper: Constructive Analysis on Prediction and Detection of Diabetic Retinopathy (DR) Using
+                    Machine Learning Algorithms - A Generic Survey"</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+<!-----------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> keerthanachukka7@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8520989758</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kruthi.m.75"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/keerthana_chukka/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/keerthana-chukka-98301b21b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Keerthana's Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row=""6 placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello everyone...!</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Keerthana. Made with <i class="fa-solid fa-heart"></i> by visual studio code</p>
+    </div>
+</div>
+
+<!----------------script--------------->
+<script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyTjEzzw6HD9NF-E1f9JQH-kGmmGEwScrxCajgyhMM/dev'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+
+</html>
